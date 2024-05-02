@@ -1,0 +1,47 @@
+/*A google website that just gives us fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+/* '*'= all components*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #081b29;
+}
+
+.NavigationBar{
+    top: 0;
+    left: 0;
+
+    position: fixed;
+    width: 100%;
+    padding: 10px 10%;
+    background-color: #556b2f;
+
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    z-index: 100;   
+}
+
+.NavBar a{
+  font-size: 28;
+  color: #E8E0E0;
+  text-decoration: none;
+  font-weight: 500;
+  
+  /*edits the space/location */
+  margin-right: 4px;
+}
+
+/*the "Godot" text in the navigation bar is edited to look good*/
+.logo{
+    font-size: 25px;
+    color: #E8E0E0;
+    text-decoration: none;
+    font-weight: 600;
+  }
