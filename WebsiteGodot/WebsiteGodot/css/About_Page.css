@@ -1,0 +1,150 @@
+/*A google website that just gives us fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+/* '*'= all components*/
+*{
+  /*esentials*/
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  background-color: #081b29;
+}
+
+.Paragrapholder{
+  height: 25cm;
+  width: 100%;
+}
+
+.NavigationBar{/*Top green rectangle with buttons*/
+  top: 0;
+  left: 0;
+
+  position: fixed;/*Same function as the homepage fixed positioned navbar*/
+  width: 100%;/*width is set to the size of the persons screen width*/
+  padding: 10px 10%;
+  background-color: #556b2f;
+
+  justify-content: space-between;/*Spaces the children in the navigationbar*/
+  align-items: center;/*Alligns the button and logo to be centered of the navigationbar*/
+  display: flex;
+  z-index: 100;   
+}
+
+.NavBar a{
+  font-size: 28;
+  color: #E8E0E0;
+  text-decoration: none;
+  font-weight: 500;
+  
+  /*edits the space/location */
+  margin-right: 4px;
+}
+
+/*the "Godot" text in the navigation bar is edited to look good*/
+.logo{
+  font-size: 25px;
+  color: #E8E0E0;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.blockcontainer{/*makes a huge cube to as foundation*/
+  border: #000000 5px solid;
+
+  width: auto;
+  height: 10cm;
+
+  background-color: aqua;
+  /*It's just to have a visual reference*/
+
+  max-width: 20cm;/*This stops the container to go infinitely to the right*/
+
+
+  /*How seperated the container and the left side of the HTMLs border is*/
+  margin-left: 25%;/*Its in "%" cuz then it will be positioned in every devices screen size*/
+  margin-top: 2cm;/*How seperated the container and the top of the HTMLs border is*/
+
+  position: relative;/*child elements are now going to be set to the position relative of the parent*/
+}
+
+#imagecontainer1{
+  /* Parent container: "blockcontainer"
+  Percentage cuz then the computer does the work to compare it with the parent container
+  */
+  width: 100%;
+  max-width: 100%;
+  height: 75%;
+  position: absolute;/*img positioned relative to its parent*/
+
+  
+
+  background-color: #787878;
+
+}
+
+
+#imagecontainer1 #logo{/*we call #logo as child of imagecontainer1*/
+
+  object-fit: contain;/*Fits resolution of the image to the container*/
+  position: absolute;/*Childs posistion is absolute to the parents position*/
+  height: 100%;/*Child occupies full height of imagecontainer1*/
+  width: 100%;/*Child occupies full height of imagecontainer1*/
+}
+
+.blockcontainer #Fun_Facts{/*class block container is parent of id Funfacts*/
+  position: absolute;
+  top: 75%; /*positioning the text to the bottom of the container*/
+  width: 100%; height: 25%;
+
+
+  /*This is the three codes make it that the containers are spaced between each other from side to side*/
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+
+
+  background-color: #787878;
+}
+
+#Fun_Facts h1{/*Titles of the text under the first image*/
+  font-weight: 800;/*makes the text thicker*/
+  font-size: 20px;
+  color: #E8E0E0;
+}
+
+#Fun_Facts p{
+  font-size: 16px;
+  font-weight: 600;
+
+}
+
+#Fun_Facts #container2, #Fun_Facts #container3, #Fun_Facts #container4{/*all three images there*/
+  /*Gives is the same settings as the parent*/
+  width: 100%;
+  height: 100%;
+
+  border: 3px #000000 solid;/*make the borders*/
+
+  margin-bottom: 20px;/*make the containers float a bit upwards*/
+}
+
+.footer {/*We will organize the code better in the future*/
+  padding: 15px;
+  position: fixed; /* Position the footer at the bottom of the viewport */
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  background-color: #556b2f;
+  text-align:center;
+  opacity: 0;
+  transition: opacity 0.5s;
+  z-index: 1000; /* Set a higher z-index to make sure the footer appears above other content */
+
+  /*Font of the footer*/
+  font-weight: 600;
+  color: #E8E0E0;
+}
