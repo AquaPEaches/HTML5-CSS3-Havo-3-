@@ -28,7 +28,7 @@ body{
 
 /*fixing up the header and navigationbar*/
 .NavigationBar{
-  position: fixed;
+  position: fixed;/*makes it in the same position even if you scroll*/
   top: 0;
   left: 0;
   width: 100%;
@@ -131,3 +131,4 @@ body{
   font-weight: 600;
   color: #E8E0E0;
 }
+

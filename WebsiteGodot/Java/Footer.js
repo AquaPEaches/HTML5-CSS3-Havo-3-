@@ -1,11 +1,13 @@
 window.addEventListener('scroll', function() {
-    var footer = document.getElementById('footer');
-    var contentHeight = document.querySelector('.Paragrapholder').offsetHeight;
-    var yOffset = window.pageYOffset;
-    var windowHeight = window.innerHeight;
+    const footer = document.getElementById('footer');
+    const contentHeight = document.querySelector('.Paragrapholder').offsetHeight;
+
+    const yOffset = window.pageYOffset;
+    const windowHeight = window.innerHeight;
 
     // Calculate how far the user has scrolled from the top of the content
     var scrolled = yOffset + windowHeight;
+
 
 
 
@@ -19,4 +21,6 @@ window.addEventListener('scroll', function() {
         //Reset opacity to 0 if user isn't 95% there yet
         footer.style.opacity = 0;
     }
+
+
 });
