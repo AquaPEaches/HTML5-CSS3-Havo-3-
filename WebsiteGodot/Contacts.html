@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/Contacts_Page.css">
+</head>
+<body>
+    <header class="NavigationBar">
+        <a href="/Homepage.html" class="logo">Godot</a>
+        
+        <!--adds a navigation bar to the header-->
+         <nav class="NavBar">
+            <a href="Homepage.html">Home</a>
+            <a href="About.html">About</a>
+            <a href="Contacts.html">Contact</a>
+         </nav>
+    </header> 
+
+    <div class="ImgBack" id="ImgBack"></div>
+    
+    <div class="container">
+        <div class="info">
+
+            <h1>Welcome to our Contacts page! </h1>
+
+            <p> Here, you'll find all the essential ways to get in touch with us. 
+                Whether you have questions, need support, or want to provide feedback, our dedicated team is ready to assist you. 
+                You can reach out via email, phone, or visit us in person at our office. 
+                We're committed to providing prompt and helpful responses to ensure your experience with us is as smooth and enjoyable as possible. 
+                Don't hesitate to contact us
+                —we're here to help!
+            </p>
+
+            <h1>Support:</h1>
+            <a href="mailto:support@godotengine.org">support@godotengine.org</a>
+
+            <h1>Forums</h1>
+            <a href="https://godotforums.org/p/1-contact">Godot Forum Contact</a>
+
+            <br>
+            <input type="email" id="emailInput" name="email" placeholder="add your email" required>
+
+            <button onclick="saveEmail()">submit</button>
+
+        </div>
+    </div>
+
+    <script src="Java/Footer.js"></script>
+    <script src="Java/ParralaxEffect.js"></script>
+    <script src="Java/EmailSubmission.js"></script>
+</body>

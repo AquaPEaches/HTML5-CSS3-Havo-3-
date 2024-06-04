@@ -14,9 +14,23 @@ body{
   background-color: #081b29;
 }
 
-.Paragrapholder{
-  height: 25cm;
+#ImageBack {
   width: 100%;
+  height: 100vh;
+  background-image: url('../Images/GodotCassetteBeasts.png');
+  filter: brightness(55%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1; /* Ensures it is behind other content */
+}
+
+.Paragrapholder{
+  height: 100vh;
+  width: 100vw;
 }
 
 .NavigationBar{/*Top green rectangle with buttons*/
@@ -24,13 +38,15 @@ body{
   left: 0;
 
   position: fixed;/*Same function as the homepage fixed positioned navbar*/
-  width: 100%;/*width is set to the size of the persons screen width*/
+  width: 100vw;/*width is set to the size of the persons screen width*/
   padding: 10px 10%;
   background-color: #556b2f;
 
   justify-content: space-between;/*Spaces the children in the navigationbar*/
   align-items: center;/*Alligns the button and logo to be centered of the navigationbar*/
+
   display: flex;
+
   z-index: 100;   
 }
 
@@ -41,7 +57,7 @@ body{
   font-weight: 500;
   
   /*edits the space/location */
-  margin-right: 4px;
+  margin-right: 0.25rem;
 }
 
 /*the "Godot" text in the navigation bar is edited to look good*/
@@ -52,21 +68,19 @@ body{
   font-weight: 600;
 }
 
-.blockcontainer{/*makes a huge cube to as foundation*/
-
+/* Block container */
+.blockcontainer {
+  bottom: -1.5cm;
   width: auto;
   height: 10cm;
+  max-width: 20cm;
+  margin: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-  /*It's just to have a visual reference*/
-
-  max-width: 20cm;/*This stops the container to go infinitely to the right*/
-
-
-  /*How seperated the container and the left side of the HTMLs border is*/
-  margin-left: 30%;/*Its in "%" cuz then it will be positioned in every devices screen size*/
-  margin-top: 2cm;/*How seperated the container and the top of the HTMLs border is*/
-
-  position: relative;/*child elements are now going to be set to the position relative of the parent*/
+  filter: brightness(80%);
 }
 
 #imagecontainer1{
@@ -80,7 +94,10 @@ body{
 
   
 
-  background-color: #787878;
+  background-color: #abada7;
+
+  border-top-left-radius: 30%;
+  border-top-right-radius: 30%;
 
 }
 
@@ -105,12 +122,13 @@ body{
   display: flex;
 
 
-  background-color: #787878;
+  background-color: #556b2f;
+
 }
 
 #Fun_Facts h1{/*Titles of the text under the first image*/
-  font-weight: 800;/*makes the text thicker*/
-  font-size: 20px;
+  font-weight: 700;/*makes the text thicker*/
+  font-size: 18px;
   color: #E8E0E0;
 }
 
@@ -140,7 +158,7 @@ body{
   display: flex;
   
   
-  background-color: #6f716a;
+  background-color: #264448ee;
   justify-content: center;/*Center Horizontally*/
 
   
@@ -148,19 +166,40 @@ body{
 
 .revolvercontainer h2{/*adding the text thanking the sponsors*/
   position: absolute;
+  margin: 0;
   display: flex;
-
+  justify-content: center;
+  align-items: center;
   /*text customizable options*/
   color: #E8E0E0;
-  font-weight: 400;
-  font-size: 20px; 
-
-  margin-top: 0%;/*removes default margin*/
+  font-weight: 800;
+  font-size: 20px;
+  z-index: 1;
 
 }
 
+
+
+.RIcontainer #RImage1 {
+  height: 150px;
+  width: auto;
+  z-index: -1;
+}
+
+.RIcontainer #RImage2{
+  height: 150px;
+  width: auto;
+  z-index: -1;
+}
+
+.RIcontainer #RImage3{
+  height: 150px;
+  width: auto;
+  z-index: -1;
+}
+
 .RIcontainer{
-  display:flex;
+  justify-content: space-between;
   position:relative;
 }
 

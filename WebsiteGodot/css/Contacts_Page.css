@@ -1,0 +1,136 @@
+/*A google website that just gives us fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+/* '*'= all components*/
+*{
+  /*esentials*/
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body, html{
+  background-color: #081b29;
+  margin: 0;
+  overflow: hidden;
+}
+
+.NavigationBar{/*Top green rectangle with buttons*/
+  top: 0;
+  left: 0;
+
+  padding: 10px 10%;
+
+  position: fixed;/*Same function as the homepage fixed positioned navbar*/
+  width: 100%;/*width is set to the size of the persons screen width*/
+  background-color: #556b2f;
+
+  justify-content: space-between;/*Spaces the children in the navigationbar*/
+  align-items: center;/*Alligns the button and logo to be centered of the navigationbar*/
+  display: flex;
+  z-index: 100;   
+}
+
+/*the links on the top right are only edited*/
+.NavBar a{
+  font-size: 28;
+  color: #E8E0E0;
+  text-decoration: none;
+  font-weight: 500;
+    
+  /*edits the space/location */
+  margin-right: 4px;
+}
+  
+/*the "Godot" text in the navigation bar is edited to look good*/
+.logo{
+  font-size: 25px;
+  color: #E8E0E0;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+#ImgBack{
+  /*Flips image because i thought it looked nicer like that*/
+  transform: scaleX(-1);
+  
+  width: 100%;
+  height: 100vh;
+  
+  background-image: url(../Images/Contact_Us.jpg);  
+  top: 0;
+  left: 0;
+
+  /*all this settings are mostly just for custimizability*/
+  filter: brightness(60%);
+  background-size: cover;
+  position: absolute;
+
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.container{
+  width: 65%;
+  border-bottom-right-radius: 15%;
+  height: 100vh;
+  background: #4b4d41;
+  opacity: 0.4;
+  position: absolute;
+  left: 0;
+  top: 0;
+  
+}
+
+.info{
+  width: 900px;
+  color: #fff;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%); /*makes it centered*/
+  
+}
+.info h1{ 
+  font-weight: 600;/*Makes it more bold*/
+  font-size: 40px;
+
+  letter-spacing: 3px;
+}
+
+.info a{
+  font-weight: 450;
+  font-size: 21px;
+  text-decoration: underline;
+  color: #fff;
+  padding-top: 20px; 
+}
+
+.info p {
+  font-weight: 800;
+  font-size: 16px;
+  color: #fff;
+
+  padding-bottom: 20px;
+}
+
+.info input{
+  width: 50%;
+  padding: 8px 10px;
+  outline: none;
+  border: 2px solid #fff;
+  border-radius: 20px;
+
+  margin-top: 10px;
+}
+
+.info button{
+  width: 75px;
+  height: 25px;
+}
+
+::placeholder{
+  color: #000000;
+}
+
